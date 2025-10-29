@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>電線計算ツール（ケーブル選択対応）</title>
+  <link rel="stylesheet" href="style.css">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9458897141107764"
+     crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <h1>電線計算ツール（ケーブル選択対応）</h1>
+
+  <div class="container">
+    <label>ケーブル種類:
+      <select id="cableType">
+        <option value="VVF">VVF</option>
+        <option value="AE">AE</option>
+        <option value="AZ-C">AZ-C</option>
+        <option value="AZ-C-EM">AZ-C-EM</option>
+        <option value="AZ-CP">AZ-CP</option>
+        <option value="AZ-CP-EM">AZ-CP-EM</option>
+        <option value="AZ-CS-EM">AZ-CS-EM</option>
+        <option value="AZ-CSLA">AZ-CSLA</option>
+        <option value="AZ-K-EM">AZ-K-EM</option>
+        <option value="AZ-KS-EM">AZ-KS-EM</option>
+        <option value="AZ-V">AZ-V</option>
+        <option value="AZ-VS">AZ-VS</option>
+        <option value="CV">CV</option>
+        <option value="CVQ">CVQ</option>
+        <option value="CVT">CVT</option>
+        <option value="CVV">CVV</option>
+        <option value="CVVS">CVVS</option>
+        <option value="EM-AE">EM-AE</option>
+        <option value="EM-CE">EM-CE</option>
+        <option value="EM-CEE">EM-CEE</option>
+        <option value="EM-CEES">EM-CEES</option>
+        <option value="EM-CEQ">EM-CEQ</option>
+        <option value="EM-CET">EM-CET</option>
+        <option value="EM-CPEE-SCT">EM-CPEE-SCT</option>
+        <option value="EM-EEF">EM-EEF</option>
+        <option value="EM-EER">EM-EER</option>
+        <option value="EM-FCPEE">EM-FCPEE</option>
+        <option value="EM-FP">EM-FP</option>
+        <option value="EM-HP">EM-HP</option>
+        <option value="EM-IE">EM-IE</option>
+        <option value="EM-JKPEE.F-S">EM-JKPEE.F-S</option>
+        <option value="FCPEV">FCPEV</option>
+        <option value="FCPEVS">FCPEVS</option>
+        <option value="HIV">HIV</option>
+        <option value="HP">HP</option>
+        <option value="IV">IV</option>
+        <option value="JKPEVS">JKPEVS</option>
+        <option value="VVR">VVR</option>
+        <option value="Z-JKVV">Z-JKVV</option>
+        <option value="Z-JKVV-SLA">Z-JKVV-SLA</option>
+      </select>
+    </label>
+
+    <label>電圧 (V): <input id="voltage" type="number" placeholder="例: 100"></label>
+    <label>電流 (A): <input id="current" type="number" placeholder="例: 15"></label>
+    <label>距離 (m): <input id="distance" type="number" placeholder="例: 20"></label>
+    <button id="calcBtn">計算する</button>
+
+    <div id="result"></div>
+  </div>
+
+  <hr>
+
+  <h2>このツールについて</h2>
+  <p>このサイトは電圧・電流・距離を入力すると、電線の抵抗や電圧降下などを簡単に計算できる無料ツールです。ケーブル種類を選ぶことで、より現実的な抵抗率を用いた結果を得ることができます。</p>
+
+  <h2>プライバシーポリシー</h2>
+  <p>当サイトでは、第三者配信の広告サービス（Google AdSense）を利用しています。これらの広告配信事業者は、ユーザーの興味に応じた広告を表示するため、Cookieを使用することがあります。Cookieを無効にする方法や詳細については、<a href="https://policies.google.com/technologies/ads?hl=ja" target="_blank">Googleポリシーと規約</a>をご覧ください。</p>
+
+  <script src="script_v2.js"></script>
+</body>
+</html>
